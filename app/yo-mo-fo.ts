@@ -11,6 +11,6 @@ export default class AppComponent {
     name: string;
 
     constructor() {
-        this.name = 'Mo fo!';
+        this.name = 'Mo fo ku!';
     }
 }
