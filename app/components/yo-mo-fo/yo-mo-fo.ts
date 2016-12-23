@@ -5,12 +5,12 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'yo-mo-fo',
-    template: `<h2>Yo {{ name }}!</h2>`
+    templateUrl: 'app/components/yo-mo-fo/yo-mo-fo.html'
 })
 export default class AppComponent {
     name: string;
 
     constructor() {
-        this.name = 'Mo fo ku!';
+        this.name = 'mu oo fu ku!';
     }
 }

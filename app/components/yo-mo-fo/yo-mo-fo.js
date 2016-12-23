@@ -11,14 +11,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.name = 'Mo fo ku!';
+        this.name = 'mu oo fu ku!';
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'yo-mo-fo',
-        template: "<h2>Yo {{ name }}!</h2>"
+        templateUrl: 'app/components/yo-mo-fo/yo-mo-fo.html'
     })
 ], AppComponent);
 Object.defineProperty(exports, "__esModule", { value: true });

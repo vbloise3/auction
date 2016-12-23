@@ -18,6 +18,7 @@ var product_item_1 = require("./components/product-item/product-item");
 var search_1 = require("./components/search/search");
 var stars_1 = require("./components/stars/stars");
 var product_service_1 = require("./services/product-service");
+var yo_mo_fo_1 = require("./components/yo-mo-fo/yo-mo-fo");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -32,7 +33,8 @@ AppModule = __decorate([
             navbar_1.default,
             product_item_1.default,
             search_1.default,
-            stars_1.default],
+            stars_1.default,
+            yo_mo_fo_1.default],
         providers: [product_service_1.ProductService],
         bootstrap: [application_1.default]
     })

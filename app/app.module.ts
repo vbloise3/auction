@@ -12,6 +12,8 @@ import SearchComponent from "./components/search/search";
 import StarsComponent from "./components/stars/stars";
 import {ProductService} from "./services/product-service";
 
+import  YoMoFoComponent  from './components/yo-mo-fo/yo-mo-fo';
+
 @NgModule({
     imports:      [ BrowserModule ],
     declarations: [ ApplicationComponent,
@@ -20,7 +22,8 @@ import {ProductService} from "./services/product-service";
         NavbarComponent,
         ProductItemComponent,
         SearchComponent,
-        StarsComponent],
+        StarsComponent,
+        YoMoFoComponent],
     providers:    [ProductService],
     bootstrap:    [ ApplicationComponent ]
 })
