@@ -10,10 +10,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
  */
 var core_1 = require("@angular/core");
 var ApplicationComponent = (function () {
-    function ApplicationComponent(productService) {
-        this.productService = productService;
-        this.products = []; // <1>
-        this.products = this.productService.getProducts(); // <3>
+    function ApplicationComponent() {
     }
     return ApplicationComponent;
 }());

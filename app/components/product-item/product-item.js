@@ -20,7 +20,8 @@ __decorate([
 ProductItemComponent = __decorate([
     core_1.Component({
         selector: 'auction-product-item',
-        templateUrl: 'app/components/product-item/product-item.html'
+        styleUrls: ['app/components/product-item/product-item.css'],
+        templateUrl: 'app/components/product-item/product-item.html',
     })
 ], ProductItemComponent);
 Object.defineProperty(exports, "__esModule", { value: true });

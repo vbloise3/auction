@@ -1,6 +1,7 @@
 {
-  "name": "angular-auction",
-  "description": "Auction npm-managed project for Chapter 2",
+  "name": "auction_ch3",
+  "description": "Sample Online Auction from Chapter 3 from the book Angular 2 Development with TypeScript",
+  "homepage": "https://www.manning.com/books/angular-2-development-with-typescript",
   "private": true,
   "scripts": {
     "start": "live-server --port=3002"
@@ -11,16 +12,17 @@
     "@angular/core": "2.0.0",
     "@angular/forms": "2.0.0",
     "@angular/http": "2.0.0",
-    "@angular/material": "^2.0.0-beta.0",
     "@angular/platform-browser": "2.0.0",
     "@angular/platform-browser-dynamic": "2.0.0",
-    "@angular/router": "^3.0.0",
-    "bootstrap": "^3.3.7",
+    "@angular/router": "3.0.0",
+
     "core-js": "^2.4.0",
-    "jquery": "^2.2.4",
     "rxjs": "5.0.0-beta.12",
     "systemjs": "0.19.37",
-    "zone.js": "0.6.21"
+    "zone.js": "0.6.21",
+
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2"
   },
   "devDependencies": {
     "live-server": "0.8.2",
