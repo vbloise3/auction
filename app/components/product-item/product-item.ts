@@ -3,6 +3,7 @@
  */
 import {Component, Input} from '@angular/core';
 import {Product} from '../../services/product-service';
+import StarsComponent from '../stars/stars';
 
 @Component({
     selector: 'auction-product-item',
