@@ -2,9 +2,11 @@
  * Created by vincebloise on 1/4/17.
  */
 import {Component} from '@angular/core';
+import {FormControl} from '@angular/forms';
 import {Product, ProductService} from '../../services/product-service';
 import CarouselComponent from '../carousel/carousel';
 import ProductItemComponent from '../product-item/product-item';
+import 'rxjs/add/operator/debounceTime';
 
 @Component({
     selector: 'auction-home-page',
@@ -16,7 +18,16 @@ import ProductItemComponent from '../product-item/product-item';
       </div>
     </div>
     <div class="row">
-      <div *ngFor="let product of products" class="col-sm-4 col-lg-4 col-md-4">
+      <div class="col-md-12">
+        <div class="form-group">
+          <input placeholder="Filter products by title"
+                 class="form-control" type="text"
+                 [formControl]="titleFilter">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor="let product of products | filter:'title':filterCriteria" class="col-sm-4 col-lg-4 col-md-4">
         <auction-product-item [product]="product"></auction-product-item>
       </div>
     </div>
@@ -24,8 +35,15 @@ import ProductItemComponent from '../product-item/product-item';
 })
 export default class HomeComponent {
     products: Product[] = [];
+    titleFilter: FormControl = new FormControl();
+    filterCriteria: string;
 
     constructor(private productService: ProductService) {
         this.products = this.productService.getProducts();
+        this.titleFilter.valueChanges
+            .debounceTime(100)
+            .subscribe(
+                value => this.filterCriteria = value,
+                error => console.error(error));
     }
 }

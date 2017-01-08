@@ -17,6 +17,7 @@ import {ProductService} from "./services/product-service";
 import HomeComponent from "./components/home/home";
 import ProductDetailComponent from "./components/product-detail/product-detail";
 import YoMoFoComponent from './components/yo-mo-fo/yo-mo-fo';
+import {FilterPipe} from "./pipes/filter-pipe";
 
 @NgModule({
     imports:      [ BrowserModule, ReactiveFormsModule,
@@ -33,7 +34,8 @@ import YoMoFoComponent from './components/yo-mo-fo/yo-mo-fo';
         ProductItemComponent,
         SearchComponent,
         StarsComponent,
-        YoMoFoComponent],
+        YoMoFoComponent,
+        FilterPipe],
     providers:    [ProductService,
         {provide: LocationStrategy, useClass: HashLocationStrategy}],
     bootstrap:    [ ApplicationComponent ]
